@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>💎JS Image Search - Pixabay</title>
+  <!-- bulma.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <!-- font awesome  -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- custom css -->
+  <link rel="stylesheet" tyoe="text/css" media="screen" href="main.css">
+</head>
+
+<body>
+
+  <h1 class="title">JS Image Search</h1>
+  <h2 class="subtitle">Pixabay</h2>
+
+  <!-- search form -->
+  <form>
+    <div class="field is-grouped">
+      <div class="control has-icons-left has-icons-right is-expanded">
+        <input type="text" id="searchTerm" name="searchTerm" class="input is-large" placeholder="Search photos for free">
+        <span class="icon is-left has-text-info">
+          <i class="fa fa-search"></i>
+        </span>
+      </div>
+      <p class="control">
+        <button class="button is-large is-danger" type="submit">GO</button>
+      </p>
+
+    </div>
+
+
+  </form>
+
+  <!-- loading image -->
+  <img id="loadingImage" src="loadingCircles.gif" alt="loading. please wait . . .">
+
+  <!-- search results container -->
+  <section class="images"></section>
+
+  <!-- custom JS script -->
+  <script src="main.js"></script>
+
+</body>
+
+</html>
